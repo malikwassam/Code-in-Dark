@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Logo1{
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    padding:0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.nav-links li::after {
+    content: url('dropdown-icon.png'); /* Replace 'dropdown-icon.png' with the path to your dropdown icon image */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(165, 14, 14);
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-container {
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.carousel-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 700px;
+    top: 10px; /* Adjusted to position the text at the top */
+    left: 10px; /* Adjusted to position the text at the left */
+    color: white;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.toggle-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.carousel-container-small {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-small {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-small {
+    min-width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.carousel-item-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.stage2-content {
+    position: relative;
+    text-align: center;
+}
+.stage2-content img {
+    width: 1200px;
+    height: 400px;
+    height: auto;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+}
+
+
+.stage3-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    width: 60%;
+    text-align: center;
+}
+.text {
+    width: 30%;
+}
+.circle-image {
+    width: 60%;
+}
+.circle-image img {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+}
+
+
+.stage4-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.box {
+    width: 48%;
+}
+.orange-box {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+.stage5-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.paragraph {
+    width: 60%;
+}
+
+.buttons1 button {
+    width: 100px; /* Adjust width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    border: none;
+    background-color: blue; /* Change button color */
+    color: white; /* Change text color */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+}
+
+.logo5 img {
+    width: 60%
+
+}
+footer {
+    background-image: url('bg-img-footer.png'); 
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 140px;
+    color: white; 
+    padding: 50px 20px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 35%; 
+}
+
+.text p {
+    margin: 0; 
+}
+
+.heading h3 {
+    margin: 0; 
+    writing-mode: vertical-lr; 
+    text-align: center; 
+}
+.vertical-navbar {
+    text-align: center; /* Center align the navbar */
+}
+
+.vertical-navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.vertical-navbar li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+}
+
+.vertical-navbar a {
+    display: block;
+    color: white; /* Text color */
+    text-decoration: none;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #333; /* Background color */
+}
+
+.vertical-navbar a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+#cid{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
